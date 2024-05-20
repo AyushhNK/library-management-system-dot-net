@@ -101,7 +101,7 @@ namespace library_management_system_dot_net.Controllers
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                books = books.Where(b => b.Title.Contains(searchString) || b.Author.Contains(searchString));
+                books = books.Where(b => b.Title.ToUpper().Contains(searchString.ToUpper()) || b.Author.ToUpper().Contains(searchString.ToUpper()) || b.PublishedYear.ToString().Contains(searchString.ToString()));
             }
 
             return View("Index", books.ToList());
