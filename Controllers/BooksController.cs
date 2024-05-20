@@ -93,5 +93,19 @@ namespace library_management_system_dot_net.Controllers
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
+
+        public IActionResult Search(string searchString)
+        {
+            var books = from b in _context.Books
+                        select b;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                books = books.Where(b => b.Title.Contains(searchString) || b.Author.Contains(searchString));
+            }
+
+            return View("Index", books.ToList());
+        }
+
     }
 }

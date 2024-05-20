@@ -1,34 +1,40 @@
 @model library_management_system_dot_net.Models.Book
 
-<h2>Create</h2>
+<div class="bg-gray-900 min-h-screen flex items-center justify-center py-10">
+    <div class="w-full max-w-lg mx-auto p-8 bg-gray-800 rounded-lg shadow-lg">
+        <h2 class="text-4xl font-bold text-white text-center mb-6">Create</h2>
 
-<h4>Book</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div class="form-group">
-                <label asp-for="Title" class="control-label"></label>
-                <input asp-for="Title" class="form-control" />
-                <span asp-validation-for="Title" class="text-danger"></span>
+        <h4 class="text-xl font-semibold text-white mb-4">Book</h4>
+        <hr class="border-gray-700 mb-6"/>
+
+        <form asp-action="Create" class="space-y-6">
+            <div class="flex flex-col">
+                <label asp-for="Title" class="text-white mb-1"></label>
+                <input asp-for="Title" class="px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+                <span asp-validation-for="Title" class="text-red-500 text-sm mt-1"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Author" class="control-label"></label>
-                <input asp-for="Author" class="form-control" />
-                <span asp-validation-for="Author" class="text-danger"></span>
+            <div class="flex flex-col">
+                <label asp-for="Author" class="text-white mb-1"></label>
+                <input asp-for="Author" class="px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+                <span asp-validation-for="Author" class="text-red-500 text-sm mt-1"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="ISBN" class="control-label"></label>
-                <input asp-for="ISBN" class="form-control" />
-                <span asp-validation-for="ISBN" class="text-danger"></span>
+            <div class="flex flex-col">
+                <label asp-for="ISBN" class="text-white mb-1"></label>
+                <input asp-for="ISBN" class="px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+                <span asp-validation-for="ISBN" class="text-red-500 text-sm mt-1"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="PublishedYear" class="control-label"></label>
-                <input asp-for="PublishedYear" class="form-control" />
-                <span asp-validation-for="PublishedYear" class="text-danger"></span>
+            <div class="flex flex-col">
+                <label asp-for="PublishedYear" class="text-white mb-1"></label>
+                <input asp-for="PublishedYear" class="px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+                <span asp-validation-for="PublishedYear" class="text-red-500 text-sm mt-1"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="flex flex-col">
+                <label asp-for="Amount" class="text-white mb-1"></label>
+                <input asp-for="Amount" class="px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+                <span asp-validation-for="Amount" class="text-red-500 text-sm mt-1"></span>
+            </div>
+            <div class="flex justify-center">
+                <input type="submit" value="Create" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-400 cursor-pointer"/>
             </div>
         </form>
     </div>

@@ -125,3 +125,6 @@ C:\Users\AYUSH\Desktop\library_management_system_dot_net\obj\Debug\net8.0\refint
 C:\Users\AYUSH\Desktop\library_management_system_dot_net\obj\Debug\net8.0\library_management_system_dot_net.pdb
 C:\Users\AYUSH\Desktop\library_management_system_dot_net\obj\Debug\net8.0\library_management_system_dot_net.genruntimeconfig.cache
 C:\Users\AYUSH\Desktop\library_management_system_dot_net\obj\Debug\net8.0\ref\library_management_system_dot_net.dll
+C:\Users\AYUSH\Desktop\library_management_system_dot_net\obj\Debug\net8.0\library_management_system_dot_net.sourcelink.json
+C:\Users\AYUSH\Desktop\library_management_system_dot_net\bin\Debug\net8.0\package-lock.json
+C:\Users\AYUSH\Desktop\library_management_system_dot_net\bin\Debug\net8.0\package.json
