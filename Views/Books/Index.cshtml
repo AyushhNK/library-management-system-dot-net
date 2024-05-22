@@ -1,9 +1,30 @@
 @model IEnumerable<library_management_system_dot_net.Models.Book>
 
+
+
+
+
 <div class="bg-gray-900 min-h-[calc(100vh-137px)] flex justify-center py-10">
     <div class="w-screen max-w-6xl">
-        <div class="text-center mb-8">
-            <h2 class="text-4xl font-bold text-white">Books</h2>
+        <div class="flex justify-between pb-10">
+            <div class="group overflow-hidden flex justify-center items-center h-40 w-80  bg-red-500 rounded-2xl outline outline-black -outline-offset-8">
+              <div class="z-10 flex flex-col items-center gap-2">
+                <span class="text-black text-6xl font-bold">@Model.Count() </span>
+                <p class="text-gray-50 text-2xl">Books</p>
+              </div>
+            </div>
+            <div class="group overflow-hidden flex justify-center items-center h-40 w-80  bg-green-500 rounded-2xl outline outline-black -outline-offset-8">
+              <div class="z-10 flex flex-col items-center gap-2">
+                <span class="text-black text-6xl font-bold">0 </span>
+                <p class="text-gray-50 text-2xl">Users</p>
+              </div>
+            </div>
+            <div class="group overflow-hidden flex justify-center items-center h-40 w-80  bg-yellow-500 rounded-2xl outline outline-black -outline-offset-8">
+              <div class="z-10 flex flex-col items-center gap-2">
+                <span class="text-black text-6xl font-bold">0 </span>
+                <p class="text-gray-50 text-2xl">Years</p>
+              </div>
+            </div>
         </div>
         <div class="overflow-x-auto bg-gray-800 rounded-lg shadow-lg">
             <table class="min-w-full bg-gray-800 text-white rounded-lg">
